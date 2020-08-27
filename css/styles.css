@@ -1,0 +1,113 @@
+header {
+    background-color: rgb(173, 44, 44);
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+  }
+  #header-text{
+      text-align: center;
+  }
+  .topnav {
+    overflow: hidden;
+    animation: animate 16s ease-in-out infinite;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color:rgb(151, 47, 47);
+    color: white;
+    opacity: 0.8;
+  }
+  h1, h4{
+    text-align: center;
+    font-family: 'Mansalva';
+  }
+  .topnav{
+    float: right;
+  }
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  .topnav {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown2 {
+    float: left;
+    overflow: hidden;
+    color: black;
+  }
+  .dropdown2 .dropbtn2 {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .dropdown2:hover .dropbtn2 {
+    background-color:rgb(151, 47, 47);
+    color: white;
+    opacity: 0.8;
+  }
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content2 a:hover {
+    background-color: grey;
+  }
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+  }
+  .slang {
+    text-align: center;
+    margin-right: 35px;
+  }
+  @keyframes animate{
+    0%, 100%{ 
+        background-image: url('../images/elegant.jpg');
+        height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    25%{
+        background-image: url('../images/premium.jpg');
+        height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
