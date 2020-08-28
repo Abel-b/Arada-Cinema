@@ -150,8 +150,8 @@ header {
   width: 100%;
   }
   .new-card .back {
-  background: #eaeaed;
-  color: #0087cc;
+  background: rgb(151, 47, 47);
+  color: #eaeaed;
   font-size: 110%;
   line-height: 50px;
   text-align: center;
@@ -183,8 +183,8 @@ header {
   width: 100%;
   }
   .new-card1 .back1 {
-  background: #eaeaed;
-  color: #0087cc;
+  background: rgb(151, 47, 47);
+  color: #eaeaed;
   line-height: 50px;
   transform: rotateY(180deg);
   }
@@ -214,8 +214,8 @@ header {
   width: 100%;
   }
   .new-card2 .back2 {
-  background: #eaeaed;
-  color: #0087cc;
+  background: rgb(151, 47, 47);
+  color: #eaeaed;
   line-height: 50px;
   text-align: center;
   transform: rotateY(180deg);
@@ -310,4 +310,64 @@ font-size: 14px;
 font-weight: 400;
 color: #6c6a74;
 margin-top: 3px;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgb(151, 47, 47);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(151, 47, 47) transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin-left: 450px;
+  border-radius: 17px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(151, 47, 47);
 }
